@@ -278,7 +278,7 @@ module ActionView
 
       module FormBuilderMethods
         def error_message_on(method, *args)
-          @template.error_message_on(@object, method, *args)
+          @template.error_message_on(@object || @object_name, method, *args)
         end
 
         def error_messages(options = {})
