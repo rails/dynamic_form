@@ -1,4 +1,5 @@
-require 'action_view/helpers/form_helper'
+require 'action_view/helpers'
+require 'active_support/i18n'
 require 'active_support/core_ext/enumerable'
 require 'active_support/core_ext/object/blank'
 
@@ -270,10 +271,6 @@ module ActionView
           end
         end
 
-        def error_message
-          object.errors[@method_name]
-        end
-
         def column_type
           object.send(:column_for_attribute, @method_name).type
         end
@@ -301,3 +298,5 @@ module ActionView
     end
   end
 end
+
+I18n.load_path << File.expand_path("../../locale/en.yml", __FILE__)
