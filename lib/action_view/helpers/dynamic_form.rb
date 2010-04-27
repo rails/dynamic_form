@@ -287,8 +287,6 @@ module ActionView
       end
     end
 
-    include DynamicForm
-
     class InstanceTag
       include DynamicForm::InstanceTagMethods
     end
