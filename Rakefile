@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "dynamic_form"
     gem.summary = %Q{DynamicForm holds a few helper methods to help you deal with your Rails3 models}
-    gem.description = %Q{DynamicForm holds a few helper methods to help you deal with your Rails3 models. It includes the stripped out methods from Rails 2; error_message_on and error_messages_for, and also ports the functionality of the custom-err-messages plugin.}
+    gem.description = %Q{DynamicForm holds a few helper methods to help you deal with your Rails3 models. It includes the stripped out methods from Rails 2; error_message_on and error_messages_for. It also brings in the functionality of the custom-err-messages plugin, which provides more flexibility over your model error messages.}
     gem.email = "joel@developwithstyle.com"
     gem.homepage = "http://codaset.com/joelmoss/dynamic-form"
     gem.authors = ["Joel Moss"]
