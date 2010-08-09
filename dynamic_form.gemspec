@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{dynamic_form}
-  s.version = "1.0.0"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Joel Moss"]
@@ -13,20 +13,22 @@ Gem::Specification.new do |s|
   s.description = %q{DynamicForm holds a few helper methods to help you deal with your Rails3 models. It includes the stripped out methods from Rails 2; error_message_on and error_messages_for}
   s.email = %q{joel@developwithstyle.com}
   s.extra_rdoc_files = [
-    "README"
+    "README.md"
   ]
   s.files = [
     ".gitignore",
      "Gemfile",
      "Gemfile.lock",
      "MIT-LICENSE",
-     "README",
+     "README.md",
      "Rakefile",
      "VERSION",
      "dynamic_form.gemspec",
      "init.rb",
      "lib/action_view/helpers/dynamic_form.rb",
      "lib/action_view/locale/en.yml",
+     "lib/active_model/dynamic_errors.rb",
+     "lib/active_model/locale/en.yml",
      "lib/dynamic_form.rb",
      "test/dynamic_form_i18n_test.rb",
      "test/dynamic_form_test.rb",
