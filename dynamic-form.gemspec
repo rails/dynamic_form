@@ -23,9 +23,11 @@ Gem::Specification.new do |s|
      "README",
      "Rakefile",
      "VERSION",
+     "dynamic-form.gemspec",
      "init.rb",
      "lib/action_view/helpers/dynamic_form.rb",
      "lib/action_view/locale/en.yml",
+     "rails/init.rb",
      "test/dynamic_form_i18n_test.rb",
      "test/dynamic_form_test.rb",
      "test/test_helper.rb"
