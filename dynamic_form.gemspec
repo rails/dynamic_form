@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Joel Moss"]
   s.date = %q{2010-08-09}
-  s.description = %q{DynamicForm holds a few helper methods to help you deal with your Rails3 models. It includes the stripped out methods from Rails 2; error_message_on and error_messages_for}
+  s.description = %q{DynamicForm holds a few helper methods to help you deal with your Rails3 models. It includes the stripped out methods from Rails 2; error_message_on and error_messages_for, and also ports the functionality of the custom-err-messages plugin.}
   s.email = %q{joel@developwithstyle.com}
   s.extra_rdoc_files = [
     "README.md"
