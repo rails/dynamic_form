@@ -144,6 +144,7 @@ class DynamicFormTest < ActionView::TestCase
   end
 
   def test_text_field_with_errors
+    p text_field("post", "author_name")
     assert_dom_equal(
       %(<div class="fieldWithErrors"><input id="post_author_name" name="post[author_name]" size="30" type="text" value="" /></div>),
       text_field("post", "author_name")
