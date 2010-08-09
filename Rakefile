@@ -1,4 +1,22 @@
+require "rake"
 require 'rake/testtask'
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gem|
+    gem.name = "DynamicForm"
+    gem.summary = %Q{DynamicForm holds a few helper methods to help you deal with your Rails3 models}
+    gem.description = %Q{DynamicForm holds a few helper methods to help you deal with your Rails3 models. It includes the stripped out methods from Rails 2; error_message_on and error_messages_for}
+    gem.email = "joel@developwithstyle.com"
+    gem.homepage = "http://codaset.com/joelmoss/dynamic_form"
+    gem.authors = ["Joel Moss"]
+    gem.add_development_dependency "mocha", ">= 0"
+    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+  end
+  Jeweler::GemcutterTasks.new
+rescue LoadError
+  puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
+end
 
 desc 'Default: run unit tests.'
 task :default => :test
