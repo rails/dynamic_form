@@ -369,4 +369,10 @@ class DynamicFormTest < ActionView::TestCase
 
     assert_dom_equal expected, output_buffer
   end
+  
+  def test_error_messages_without_prefixed_attribute_name
+    error = error_messages_for(@post)
+    assert_dom_equal %(<div class="errorExplanation" id="errorExplanation"><h2>1 error prohibited this post from being saved</h2><p>There were problems with the following fields:</p><ul><li>Author name can't be empty</li></ul></div>),
+      error
+  end
 end
