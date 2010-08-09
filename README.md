@@ -10,6 +10,8 @@ DynamicForm holds a few helpers method to help you deal with your Rails3 models,
 
 It also adds `f.error_messages` and `f.error_messages_on` to your form builders.
 
+Read `/lib/action_view/helpers/dynamic_form.rb` for details of each method.
+
 ---
 
 DynamicErrors
