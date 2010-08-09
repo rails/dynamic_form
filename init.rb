@@ -1,1 +1,1 @@
-require 'dynamic-form'
+require 'dynamic_form'
