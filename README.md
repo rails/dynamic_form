@@ -50,7 +50,7 @@ DynamicForm can be installed as a gem in your `Gemfile`:
     
 or as a plugin by running this command:
 
-    rails plugin install git://codaset.com/joelmoss/dynamic-form.git
+    rails plugin install git://github.com/rails/dynamic_form.git
 
 ---
 
