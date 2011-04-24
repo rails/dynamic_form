@@ -139,8 +139,8 @@ module ActionView
       # This <tt>DIV</tt> can be tailored by the following options:
       #
       # * <tt>:header_tag</tt> - Used for the header of the error div (default: "h2").
-      # * <tt>:id</tt> - The id of the error div (default: "errorExplanation").
-      # * <tt>:class</tt> - The class of the error div (default: "errorExplanation").
+      # * <tt>:id</tt> - The id of the error div (default: "error_explanation").
+      # * <tt>:class</tt> - The class of the error div (default: "error_explanation").
       # * <tt>:object</tt> - The object (or array of objects) for which to display errors,
       #   if you need to escape the instance variable convention.
       # * <tt>:object_name</tt> - The object name to use in the header, or any text that you prefer.
@@ -207,7 +207,7 @@ module ActionView
               value = options[key]
               html[key] = value unless value.blank?
             else
-              html[key] = 'errorExplanation'
+              html[key] = 'error_explanation'
             end
           end
           options[:object_name] ||= params.first
