@@ -267,7 +267,7 @@ module ActionView
             when :time
               to_time_select_tag(options)
             when :boolean
-              to_boolean_select_tag(options)
+              to_boolean_select_tag(options).html_safe
           end
         end
 
