@@ -34,7 +34,7 @@ Gem::Specification.new do |s|
      "test/dynamic_form_test.rb",
      "test/test_helper.rb"
   ]
-  s.homepage = %q{http://codaset.com/joelmoss/dynamic-form}
+  s.homepage = %q{http://github.com/joelmoss/dynamic_form}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
