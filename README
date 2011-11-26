@@ -1,7 +1,7 @@
 DynamicForm
 ===========
 
-DynamicForm holds a few helpers method to help you deal with your models, they are:
+DynamicForm holds a few helper methods to help you deal with your models, they are:
 
 * input(record, method, options = {})
 * form(record, options = {})
