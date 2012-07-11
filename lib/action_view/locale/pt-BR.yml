@@ -1,0 +1,8 @@
+'pt-BR':
+  errors:
+    template:
+      header:
+        one:    "1 erro impediu que %{model} fosse gravado"
+        other:  "%{count} erros impediram que %{model} fosse gravado"
+      # The variable :count is also available
+      body: "Foram encontrados problemas com os seguintes campos:"

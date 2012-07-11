@@ -2,6 +2,7 @@ require 'action_view/helpers'
 require 'active_support/i18n'
 require 'active_support/core_ext/enumerable'
 require 'active_support/core_ext/object/blank'
+require 'find'
 
 module ActionView
   module Helpers
@@ -297,4 +298,10 @@ module ActionView
   end
 end
 
-I18n.load_path << File.expand_path("../../locale/en.yml", __FILE__)
+# Takes all translations files in the folder
+Find.find('vendor/plugins/dynamic_form/lib/action_view/locale/') do |f|
+  if File.file?(f)
+    I18n.load_path << File.expand_path("../../locale/#{File.basename(f)}", __FILE__)
+  end
+end
+
